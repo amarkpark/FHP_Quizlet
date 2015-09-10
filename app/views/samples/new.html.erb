@@ -1,0 +1,10 @@
+<!-- page to add new comments -->
+<h1> Add comments here </h1>
+<br />
+
+<%= simple_form_for @sample do |f| %>
+	<%= f.input :comment %>
+	<%= f.input :author %>
+	<%= f.input :email %>
+	<%= f.submit 'Add Comment' %>
+<% end %>

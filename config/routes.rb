@@ -6,6 +6,8 @@ Quizlet::Application.routes.draw do
   # root 'welcome#index'
   root 'samples#index'
 
+  resources :samples
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
