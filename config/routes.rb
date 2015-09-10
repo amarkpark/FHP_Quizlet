@@ -5,8 +5,9 @@ Quizlet::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root 'samples#index'
-
   resources :samples
+  get 'quiz1', :to => 'samples#quiz1'
+  get 'quiz2', :to => 'samples#quiz2'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

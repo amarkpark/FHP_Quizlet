@@ -1,0 +1,22 @@
+<!-- Quiz2 Refactor 20150910 -->
+
+<h1> Quiz2 Page </h1>
+<h1> Add comments here </h1>
+<br />
+
+<%= simple_form_for Sample.new do |f| %>
+	<%= f.input :comment %>
+	<%= f.input :author %>
+	<%= f.input :email %>
+	<%= f.submit 'Add Comment' %>
+<% end %>
+
+
+<br />
+<h1>Comments</h1>
+<% @samples.each do |sample| %>
+	<div>
+		<p><%= sample.comment %></p>
+		<p><%= sample.author %> | <%= sample.email %></p>
+	</div>
+<% end %>

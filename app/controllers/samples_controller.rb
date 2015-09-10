@@ -9,7 +9,14 @@ class SamplesController < ApplicationController
 
 	def create
 		Sample.create(sample_params)
-		redirect_to root_path
+		redirect_to quiz2_path
+	end
+
+	def quiz1
+	end
+
+	def quiz2
+		@samples = Sample.all
 	end
 
 	private

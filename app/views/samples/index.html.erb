@@ -1,13 +1,7 @@
 <!-- quizlet App for FHP index.html.erb -->
 
-<h1> Index page </h1>
-<br />
-<p><%= @samples.inspect %></p>
-<br />
-
-<% @samples.each do |sample| %>
-	<div>
-		<p><%= sample.comment %></p>
-		<p><%= sample.author %> | <%= sample.email %></p>
-	</div>
-<% end %>
+<div class="col-xs-11 mainbody">
+	<h1>FHP Quizzes:</h1>
+	<h2>Please click here for: <%= link_to 'Quiz1', quiz1_path %></h2>
+	<h2>Please click here for: <%= link_to 'Quiz2', quiz2_path %></h2>
+</div>
