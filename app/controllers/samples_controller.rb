@@ -3,12 +3,11 @@ class SamplesController < ApplicationController
 		@samples = Sample.all
 	end
 
-	def new
-		@sample = Sample.new
-	end
-
 	def create
-		Sample.create(sample_params)
+		@sample = Sample.create(sample_params)
+		if @sample.invalid?
+			flash[:error] = '<strong>Could not add empty Comment.</strong>'
+		end
 		redirect_to quiz2_path
 	end
 
