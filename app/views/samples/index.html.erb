@@ -1,3 +1,13 @@
 <!-- quizlet App for FHP index.html.erb -->
 
 <h1> Index page </h1>
+<br />
+<p><%= @samples.inspect %></p>
+<br />
+
+<% @samples.each do |sample| %>
+	<div>
+		<p><%= sample.comment %></p>
+		<p><%= sample.author %> | <%= sample.email %></p>
+	</div>
+<% end %>
