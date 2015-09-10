@@ -6,9 +6,9 @@
 
 <div class="col-xs-10 col-xs-offset-1">
 	<%= simple_form_for Sample.new do |f| %>
-		<%= f.input :comment %>
-		<%= f.input :author %>
-		<%= f.input :email %><br />
+		<%= f.input :comment, :placeholder => "Let your voice be heard." %>
+		<%= f.input :author, :placeholder => "Funky Chicken" %>
+		<%= f.input :email, :placeholder => "funky@chicken.com" %><br />
 		<%= f.submit 'Add Comment', :class => "pull-right" %>
 	<% end %>
 </div>
