@@ -1,5 +1,63 @@
-/* Quizlet Master Stylesheet */
+/* Quizlet Master Stylesheet 20150910 */
+
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic);
+
+@-ms-viewport {
+  width: device-width;
+}
+
+.clear {
+	clear:both;
+}
+
+.amplogo {
+	padding: 12px;
+	height: 112px;
+	background-color: #e3e0e7;
+	float: left;
+}
+
+.dispbox {
+	box-shadow: 1px 1px 6px rgba(75, 0, 130, 0.75);
+	background-color: rgba(227,227,231,0.3);
+	border: 1px solid #ccc;
+	border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+	border-radius: 6px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding: 15px;
+}
+
+.notes {
+	color: Indigo;
+	padding: 20px;
+	height: 112px;
+	background-color: #e3e0e7;
+	float: right;
+}
 
 .mainbody {
 	padding:12px;
+}
+
+a {
+	color: #378200;
+}
+
+h1 {
+	font-family: 'Fira Sans', sans-serif;
+}
+
+h2 {
+	font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+	background-color: #e3e0e7;
+}
+
+body {
+		/* Trebuchet-based sans serif stack */
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+	font-size:18px;
 }
